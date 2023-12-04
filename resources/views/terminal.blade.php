@@ -19,8 +19,8 @@
   <form action="{{ route('runArtisanCommand') }}" method="POST">
     @csrf
     <div class="form-group">
-    <label for="komutInput">Enter Command: (<b>Type the command other than php artisan</b>)</label>
-    <input type="text" class="form-control" name="komut" id="komutInput" placeholder="Enter your command here">
+    <label for="commandInput">Enter Command: (<b>Type the command other than php artisan</b>)</label>
+    <input type="text" class="form-control" name="command" id="commandInput" placeholder="Enter your command here">
     </div>
   
     <button type="button" class="btn btn-primary" onclick="runCommand()">Run</button>
@@ -31,7 +31,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
 <script>
   function runCommand() {
-    var command = document.getElementById('komutInput').value;
+    var command = document.getElementById('commandInput').value;
 
     $.ajax({
       type: "GET",
