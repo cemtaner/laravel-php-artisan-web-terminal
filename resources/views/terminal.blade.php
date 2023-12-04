@@ -36,7 +36,7 @@
     $.ajax({
       type: "GET",
       url: '{{ route("runArtisanCommand") }}',
-      data: { komut: command },
+      data: { command: command },
       success: function(response) {
         console.log("Process completed:", response);
         document.getElementById('result').innerHTML = "<p><strong>Result:</strong> " + response + "</p>";
