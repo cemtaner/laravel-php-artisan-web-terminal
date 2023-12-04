@@ -13,9 +13,9 @@ class ArtisanController extends Controller
 
     public function runArtisanCommand(Request $request)
     {
-        $komut = $request->input('komut');
+        $command = $request->input('command');
 
-        $exitCode = Artisan::call($komut);
+        $exitCode = Artisan::call($command);
 
         if ($exitCode === 0) {
             $message = 'Artisan command ran successfully!';
