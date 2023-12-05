@@ -17,5 +17,3 @@ git clone https://github.com/cemtaner/laravel-php-artisan-web-terminal.git<br>
 php artisan serve<br>
 http://127.0.0.1:8000/<br>
 <a href="https://laravel.cemtaner.com">laravel.cemtaner.com</a>
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
